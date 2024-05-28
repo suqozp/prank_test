@@ -1,0 +1,471 @@
+{\rtf1\ansi\ansicpg950\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red137\green112\blue139;\red179\green77\blue37;\red224\green218\blue212;
+\red26\green26\blue26;\red225\green179\blue88;\red91\green138\blue176;\red149\green184\blue79;\red193\green152\blue86;
+\red254\green187\blue91;\red197\green195\blue255;\red67\green145\blue63;}
+{\*\expandedcolortbl;;\cssrgb\c60784\c52157\c61569;\cssrgb\c76078\c38431\c18824;\cssrgb\c90196\c88235\c86275;
+\cssrgb\c13725\c13725\c13725;\cssrgb\c90980\c74902\c41569;\cssrgb\c42745\c61176\c74510;\cssrgb\c64706\c76078\c38039;\cssrgb\c80392\c65882\c41176;
+\cssrgb\c100000\c77647\c42745;\cssrgb\c81569\c81569\c100000;\cssrgb\c31765\c62353\c31373;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14300\viewh18400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE \cf3 \strokec3 html\cf2 \strokec2 >\cf4 \cb5 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb1 \strokec6 <html>\cf4 \cb5 \strokec4 \
+\
+\cf6 \cb1 \strokec6 <head>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <meta \cf7 \strokec7 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <meta \cf7 \strokec7 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf6 \strokec6 \
+		\cf7 \strokec7 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"\cf6 \strokec6 >\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <title>\cf4 \cb5 \strokec4 My LIFF App3\cf6 \cb1 \strokec6 </title>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <style>\cf4 \strokec4 \
+\
+		\cf3 \strokec3 button\cf4 \strokec4  \{\
+			\cf9 \strokec9 display\cf4 \strokec4 : none;\
+			\cf9 \strokec9 width\cf4 \strokec4 : \cf8 \strokec8 50%\cf4 \strokec4 ;\
+			\cf9 \strokec9 height\cf4 \strokec4 : \cf8 \strokec8 10%\cf4 \strokec4 ;\
+			\cf9 \strokec9 padding\cf4 \strokec4 : \cf8 \strokec8 16px\cf4 \strokec4  \cf8 \strokec8 0\cf4 \strokec4 ;\
+			\cf9 \strokec9 margin\cf4 \strokec4 : auto \cf8 \strokec8 0\cf4 \strokec4 ;\
+		\}\
+	\cf6 \strokec6 </style>\cf4 \cb5 \strokec4 \
+\cf6 \cb1 \strokec6 </head>\cf4 \cb5 \strokec4 \
+\
+\cf6 \cb1 \strokec6 <body>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <button \cf7 \strokec7 id\cf6 \strokec6 =\cf8 \strokec8 "btnShare"\cf6 \strokec6  \cf7 \strokec7 onclick\cf6 \strokec6 =\cf8 \strokec8 "sendShare_Gift()"\cf6 \strokec6  \cf7 \strokec7 style\cf6 \strokec6 =\cf8 \strokec8 "display: none;margin: 20px auto;padding: 20px;"\cf6 \strokec6 >\cf4 \cb5 \strokec4 Gift\cf6 \cb1 \strokec6 </button>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <button \cf7 \strokec7 id\cf6 \strokec6 =\cf8 \strokec8 "btnShare2"\cf6 \strokec6  \cf7 \strokec7 onclick\cf6 \strokec6 =\cf8 \strokec8 "sendShare_Ladder()"\cf6 \strokec6  \cf7 \strokec7 style\cf6 \strokec6 =\cf8 \strokec8 "display: none;margin: 20px auto;padding: 20px;"\cf6 \strokec6 >\cf4 \cb5 \strokec4 Ladder\cf6 \cb1 \strokec6 </button>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <button \cf7 \strokec7 id\cf6 \strokec6 =\cf8 \strokec8 "btnShare3"\cf6 \strokec6  \cf7 \strokec7 onclick\cf6 \strokec6 =\cf8 \strokec8 "sendShare_Pay()"\cf6 \strokec6  \cf7 \strokec7 style\cf6 \strokec6 =\cf8 \strokec8 "display: none;margin: 20px auto;padding: 20px;"\cf6 \strokec6 >\cf4 \cb5 \strokec4 Pay\cf6 \cb1 \strokec6 </button>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <button \cf7 \strokec7 id\cf6 \strokec6 =\cf8 \strokec8 "btnLogin"\cf6 \strokec6  \cf7 \strokec7 onclick\cf6 \strokec6 =\cf8 \strokec8 "liff.login()"\cf6 \strokec6  \cf7 \strokec7 style\cf6 \strokec6 =\cf8 \strokec8 "display: none;margin: 20px auto;padding: 20px;"\cf6 \strokec6 >\cf4 \cb5 \strokec4 Log In\cf6 \cb1 \strokec6 </button>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <button \cf7 \strokec7 id\cf6 \strokec6 =\cf8 \strokec8 "btnLogOut"\cf6 \strokec6  \cf7 \strokec7 onclick\cf6 \strokec6 =\cf8 \strokec8 "logOut()"\cf6 \strokec6  \cf7 \strokec7 style\cf6 \strokec6 =\cf8 \strokec8 "display: none;margin: 20px auto;padding: 20px;"\cf6 \strokec6 >\cf4 \cb5 \strokec4 Log Out\cf6 \cb1 \strokec6 </button>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <script \cf7 \strokec7 src\cf6 \strokec6 =\cf8 \strokec8 "https://static.line-scdn.net/liff/edge/2/sdk.js"\cf6 \strokec6 ></script>\cf4 \cb5 \strokec4 \
+	\cf6 \cb1 \strokec6 <script>\cf4 \strokec4 \
+		\cf3 \strokec3 async\cf4 \strokec4  \cf3 \strokec3 function\cf4 \strokec4  \cf10 \strokec10 sendShare_Gift\cf4 \strokec4 () \{\
+			name = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 getProfile\cf4 \strokec4 ().\cf10 \strokec10 then\cf4 \strokec4 ((\cf11 \strokec11 profile\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  profile.displayName;\
+			\}).\cf10 \strokec10 catch\cf4 \strokec4 ((\cf11 \strokec11 err\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  err;\
+			\});\
+\
+			\cf3 \strokec3 const\cf4 \strokec4  result = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 shareTargetPicker\cf4 \strokec4 ([\
+				\{\
+					\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "flex"\cf4 \strokec4 ,\
+					\cf8 \strokec8 "altText"\cf4 \strokec4 : name + \cf8 \strokec8 "\uc0\u36865 \u31150 \u29289 \u20358 \u22217 !"\cf4 \strokec4 ,\
+					\cf8 \strokec8 "contents"\cf4 \strokec4 : \{\
+						\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "bubble"\cf4 \strokec4 ,\
+						\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "kilo"\cf4 \strokec4 ,\
+						\cf8 \strokec8 "hero"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "image"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "url"\cf4 \strokec4 : \cf8 \strokec8 "https://img.onl/olwxWE"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "full"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "aspectRatio"\cf4 \strokec4 : \cf8 \strokec8 "18:19"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+								\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+							\},\
+							\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetBottom"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "align"\cf4 \strokec4 : \cf8 \strokec8 "center"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "aspectMode"\cf4 \strokec4 : \cf8 \strokec8 "cover"\cf4 \strokec4 \
+						\},\
+						\cf8 \strokec8 "body"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "horizontal"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "spacing"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+								\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+							\},\
+							\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "image"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "url"\cf4 \strokec4 : \cf8 \strokec8 "https://img.onl/pNQsvU"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "align"\cf4 \strokec4 : \cf8 \strokec8 "start"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "md"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetBottom"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+									\},\
+									\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "position"\cf4 \strokec4 : \cf8 \strokec8 "relative"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetEnd"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "text"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "text"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u12304 \u26143 \u24052 \u20811 \u12305 \u22823 \u26479 \u33437 \u40635 \u26447 \u20161 \u35910 \u33104 \u26143 \u20912 \u27138 \u21363 \u20139 \u21048 "\cf4 \strokec4 ,\
+									\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "md"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "weight"\cf4 \strokec4 : \cf8 \strokec8 "bold"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "align"\cf4 \strokec4 : \cf8 \strokec8 "start"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "xxl"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "contents"\cf4 \strokec4 : [],\
+									\cf8 \strokec8 "style"\cf4 \strokec4 : \cf8 \strokec8 "normal"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetEnd"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "wrap"\cf4 \strokec4 : true,\
+									\cf8 \strokec8 "offsetBottom"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+									\},\
+									\cf8 \strokec8 "position"\cf4 \strokec4 : \cf8 \strokec8 "relative"\cf4 \strokec4 \
+								\}\
+							],\
+							\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "position"\cf4 \strokec4 : \cf8 \strokec8 "relative"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetEnd"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "offsetBottom"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 \
+						\},\
+						\cf8 \strokec8 "footer"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "button"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "color"\cf4 \strokec4 : \cf8 \strokec8 "#EEE9E9"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u25171 \u38283 \u25105 \u30340 \u31150 \u29289 "\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+									\},\
+									\cf8 \strokec8 "style"\cf4 \strokec4 : \cf8 \strokec8 "secondary"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "button"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u20659 \u36865 \u24863 \u35613 \u23567 \u21345 "\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+									\}\
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "separator"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+										\{\
+											\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "button"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+												\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+												\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "LINE\uc0\u31150 \u29289 "\cf4 \strokec4 ,\
+												\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+											\},\
+											\cf8 \strokec8 "position"\cf4 \strokec4 : \cf8 \strokec8 "relative"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "height"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "style"\cf4 \strokec4 : \cf8 \strokec8 "link"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetEnd"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 \
+										\}\
+									],\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0%20%E8%B7%9F%E6%88%91%E4%BA%A4%E5%BE%80%E5%A5%BD%E3%84%87%20%3E%3C"\cf4 \strokec4 \
+									\}\
+								\}\
+							]\
+						\}\
+					\}\
+				\}\
+			])\
+			\cf3 \strokec3 if\cf4 \strokec4  (result) \{\
+				\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 `[\cf12 \strokec12 $\{result.status\}\cf8 \strokec8 ] Message sent!`\cf4 \strokec4 )\
+			\} \cf3 \strokec3 else\cf4 \strokec4  \{\
+				\cf3 \strokec3 const\cf4 \strokec4  [majorVer, minorVer, patchVer] = (liff.\cf10 \strokec10 getLineVersion\cf4 \strokec4 () || \cf8 \strokec8 ""\cf4 \strokec4 ).\cf10 \strokec10 split\cf4 \strokec4 (\cf8 \strokec8 '.'\cf4 \strokec4 );\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (minorVer === undefined) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in external browser'\cf4 \strokec4 )\
+					\cf3 \strokec3 return\cf4 \strokec4 \
+				\}\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (\cf7 \strokec7 parseInt\cf4 \strokec4 (majorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (minorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (patchVer) > \cf8 \strokec8 0\cf4 \strokec4 ) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in LINE app'\cf4 \strokec4 )\
+				\}\
+			\}\
+		\}\
+\
+		\cf3 \strokec3 async\cf4 \strokec4  \cf3 \strokec3 function\cf4 \strokec4  \cf10 \strokec10 sendShare_Ladder\cf4 \strokec4 () \{\
+			name = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 getProfile\cf4 \strokec4 ().\cf10 \strokec10 then\cf4 \strokec4 ((\cf11 \strokec11 profile\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  profile.displayName;\
+			\}).\cf10 \strokec10 catch\cf4 \strokec4 ((\cf11 \strokec11 err\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  err;\
+			\});\
+\
+			\cf3 \strokec3 const\cf4 \strokec4  result = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 shareTargetPicker\cf4 \strokec4 ([\
+				\{\
+					\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "flex"\cf4 \strokec4 ,\
+					\cf8 \strokec8 "altText"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u29228 \u26799 \u23376 \u36938 \u25138 \u24050 \u24314 \u31435 \u65292 \u35731 \u26799 \u23376 \u27770 \u23450 \u24744 \u30340 \u21629 \u36939 \u21543 \u65281 "\cf4 \strokec4 ,\
+					\cf8 \strokec8 "contents"\cf4 \strokec4 : \{\
+						\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "bubble"\cf4 \strokec4 ,\
+						\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "kilo"\cf4 \strokec4 ,\
+						\cf8 \strokec8 "hero"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "image"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "url"\cf4 \strokec4 : \cf8 \strokec8 "https://img.onl/qCFiCL"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "full"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "aspectRatio"\cf4 \strokec4 : \cf8 \strokec8 "20:13"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "aspectMode"\cf4 \strokec4 : \cf8 \strokec8 "cover"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+								\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"\cf4 \strokec4 \
+							\}\
+						\},\
+						\cf8 \strokec8 "body"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "text"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "text"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u29228 \u26799 \u23376 "\cf4 \strokec4 ,\
+									\cf8 \strokec8 "weight"\cf4 \strokec4 : \cf8 \strokec8 "bold"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "md"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "md"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "spacing"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+										\{\
+											\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "text"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "text"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u25105 \u24314 \u31435 \u20102 \u19968 \u20491 \u29228 \u26799 \u23376 \u36938 \u25138 \u65292 \u39340 \u19978 \u20358 \u30475 \u30475 \u32080 \u26524 \u21543 \u65281 "\cf4 \strokec4 ,\
+											\cf8 \strokec8 "wrap"\cf4 \strokec4 : true,\
+											\cf8 \strokec8 "color"\cf4 \strokec4 : \cf8 \strokec8 "#666666"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "size"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetEnd"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetStart"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetBottom"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "offsetTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+											\cf8 \strokec8 "flex"\cf4 \strokec4 : \cf8 \strokec8 5\cf4 \strokec4 \
+										\}\
+									]\
+								\}\
+							],\
+							\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+								\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "action"\cf4 \strokec4 ,\
+								\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=text&text=%E7%A5%9D%E5%A4%A7%E5%AE%B6520%E5%BF%AB%E6%A8%82%21"\cf4 \strokec4 \
+							\}\
+						\},\
+						\cf8 \strokec8 "footer"\cf4 \strokec4 : \{\
+							\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "spacing"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "contents"\cf4 \strokec4 : [\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "separator"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "button"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "style"\cf4 \strokec4 : \cf8 \strokec8 "link"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "height"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u38283 \u21855 \u29228 \u26799 \u23376 \u36938 \u25138 "\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=image&downloadUrl=https://i.imgur.com/vASFvRY.jpg&previewUrl=https://i.imgur.com/vASFvRY.jpg"\cf4 \strokec4 \
+									\}\
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "button"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "style"\cf4 \strokec4 : \cf8 \strokec8 "link"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "height"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "action"\cf4 \strokec4 : \{\
+										\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "uri"\cf4 \strokec4 ,\
+										\cf8 \strokec8 "label"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u26597 \u30475 \u20840 \u37096 \u32080 \u26524 "\cf4 \strokec4 ,\
+										\cf8 \strokec8 "uri"\cf4 \strokec4 : \cf8 \strokec8 "https://liff.line.me/1657022499-njBkN1k3?auto=yes&type=image&downloadUrl=https://i.imgur.com/ymZGzJT.jpg&previewUrl=https://i.imgur.com/ymZGzJT.jpg"\cf4 \strokec4 \
+									\}\
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "separator"\cf4 \strokec4 \
+								\},\
+								\{\
+									\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "box"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "layout"\cf4 \strokec4 : \cf8 \strokec8 "vertical"\cf4 \strokec4 ,\
+									\cf8 \strokec8 "contents"\cf4 \strokec4 : [],\
+									\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "sm"\cf4 \strokec4 \
+								\}\
+							],\
+							\cf8 \strokec8 "flex"\cf4 \strokec4 : \cf8 \strokec8 0\cf4 \strokec4 ,\
+							\cf8 \strokec8 "margin"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 ,\
+							\cf8 \strokec8 "paddingTop"\cf4 \strokec4 : \cf8 \strokec8 "none"\cf4 \strokec4 \
+						\}\
+					\}\
+				\}\
+			])\
+			\cf3 \strokec3 if\cf4 \strokec4  (result) \{\
+				\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 `[\cf12 \strokec12 $\{result.status\}\cf8 \strokec8 ] Message sent!`\cf4 \strokec4 )\
+			\} \cf3 \strokec3 else\cf4 \strokec4  \{\
+				\cf3 \strokec3 const\cf4 \strokec4  [majorVer, minorVer, patchVer] = (liff.\cf10 \strokec10 getLineVersion\cf4 \strokec4 () || \cf8 \strokec8 ""\cf4 \strokec4 ).\cf10 \strokec10 split\cf4 \strokec4 (\cf8 \strokec8 '.'\cf4 \strokec4 );\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (minorVer === undefined) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in external browser'\cf4 \strokec4 )\
+					\cf3 \strokec3 return\cf4 \strokec4 \
+				\}\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (\cf7 \strokec7 parseInt\cf4 \strokec4 (majorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (minorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (patchVer) > \cf8 \strokec8 0\cf4 \strokec4 ) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in LINE app'\cf4 \strokec4 )\
+				\}\
+			\}\
+		\}\
+		\
+		\cf3 \strokec3 async\cf4 \strokec4  \cf3 \strokec3 function\cf4 \strokec4  \cf10 \strokec10 sendShare_Pay\cf4 \strokec4 () \{\
+			name = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 getProfile\cf4 \strokec4 ().\cf10 \strokec10 then\cf4 \strokec4 ((\cf11 \strokec11 profile\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  profile.displayName;\
+			\}).\cf10 \strokec10 catch\cf4 \strokec4 ((\cf11 \strokec11 err\cf4 \strokec4 ) => \{\
+				\cf3 \strokec3 return\cf4 \strokec4  err;\
+			\});\
+			\cf3 \strokec3 const\cf4 \strokec4  result = \cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 shareTargetPicker\cf4 \strokec4 ([\
+				\{\
+					\cf8 \strokec8 "type"\cf4 \strokec4 : \cf8 \strokec8 "flex"\cf4 \strokec4 ,\
+					\cf8 \strokec8 "altText"\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u24050 \u25910 \u21040 NT$ 520\u30340 \u36681 \u24115 \u12290 "\cf4 \strokec4 ,\
+					\cf8 \strokec8 "contents"\cf4 \strokec4 : \{ \
+							"type": "bubble",\
+  							"size": "deca",\
+  							"hero": \{\
+    							"type": "image",\
+    							"url": "https://www.score-easy.com/archive/image/article3/0e0dd36de0a108f7.webp",\
+   							 "size": "full",\
+    							"aspectRatio": "20:13",\
+   							 	"aspectMode": "cover",\
+    							"action": \{\
+      								"type": "uri",\
+      								"uri": "https://line.me/"\
+    \}\
+  \},\
+  								"body": \{\
+    								"type": "box",\
+    								"layout": "vertical",\
+    								"contents": [\
+      									\{\
+        									"type": "text",\
+        									"text": "\uc0\u25509 \u25910  (LINE Pay)",\
+        									"margin": "none",\
+        									"size": "md",\
+        									"style": "normal",\
+        									"decoration": "none",\
+        									"position": "relative",\
+        									"align": "start",\
+        									"weight": "bold",\
+        									"color": "#485644"\
+      \},\
+      \{\
+        									"type": "text",\
+        									"text": "\uc0\u24744 \u24050 \u25910 \u21040 NT$30,000,000\u12290 ",\
+        									"size": "md",\
+        									"color": "#b4b8b1"\
+      \},\
+      \{\
+        									"type": "text",\
+        									"text": "(\uc0\u20358 \u33258 \u65306 \u22521 \u38640 )",\
+        									"size": "md",\
+        									"color": "#b4b8b1",\
+        									"action": \{\
+          										"type": "message",\
+          										"label": "action",\
+          										"text": "hello"\
+        \}\
+      \}\
+    ]\
+  \},\
+  "footer": \{\
+    "type": "box",\
+    "layout": "vertical",\
+    "spacing": "sm",\
+    "contents": [\
+      \{\
+        "type": "button",\
+        "style": "secondary",\
+        "height": "sm",\
+        "action": \{\
+          "type": "uri",\
+          "label": "\uc0\u26296 \u35299 \u26356 \u22810 ",\
+          "uri": "https://line.me/"\
+        \}\
+      \},\
+      \{\
+        "type": "separator"\
+      \},\
+      \{\
+        "type": "box",\
+        "layout": "baseline",\
+        "contents": [\
+          \{\
+            "type": "icon",\
+            "url": "https://www.score-easy.com/archive/image/article3/a56e8a3da3cfa9d6.webp",\
+            "offsetBottom": "sm",\
+            "offsetTop": "sm"\
+          \},\
+          \{\
+            "type": "text",\
+            "text": "LINE Pay",\
+            "size": "sm",\
+            "color": "#b0b0b0",\
+            "margin": "sm"\
+          \},\
+          \{\
+            "type": "text",\
+            "text": ">",\
+            "color": "#b0b0b0",\
+            "align": "end"\
+          \}\
+        ],\
+        "margin": "sm"\
+      \}\
+    ],\
+    "flex": 0\
+  \}\
+\}\
+			\cf3 \strokec3 if\cf4 \strokec4  (result) \{\
+				\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 `[\cf12 \strokec12 $\{result.status\}\cf8 \strokec8 ] Message sent!`\cf4 \strokec4 )\
+			\} \cf3 \strokec3 else\cf4 \strokec4  \{\
+				\cf3 \strokec3 const\cf4 \strokec4  [majorVer, minorVer, patchVer] = (liff.\cf10 \strokec10 getLineVersion\cf4 \strokec4 () || \cf8 \strokec8 ""\cf4 \strokec4 ).\cf10 \strokec10 split\cf4 \strokec4 (\cf8 \strokec8 '.'\cf4 \strokec4 );\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (minorVer === undefined) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in external browser'\cf4 \strokec4 )\
+					\cf3 \strokec3 return\cf4 \strokec4 \
+				\}\
+\
+				\cf3 \strokec3 if\cf4 \strokec4  (\cf7 \strokec7 parseInt\cf4 \strokec4 (majorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (minorVer) >= \cf8 \strokec8 10\cf4 \strokec4  && \cf7 \strokec7 parseInt\cf4 \strokec4 (patchVer) > \cf8 \strokec8 0\cf4 \strokec4 ) \{\
+					\cf10 \strokec10 alert\cf4 \strokec4 (\cf8 \strokec8 'ShareTargetPicker was canceled in LINE app'\cf4 \strokec4 )\
+				\}\
+			\}\
+		\}\
+		\
+		\cf3 \strokec3 function\cf4 \strokec4  \cf10 \strokec10 logOut\cf4 \strokec4 () \{\
+			liff.\cf10 \strokec10 logout\cf4 \strokec4 ()\
+			\cf8 \strokec8 window\cf4 \strokec4 .location.\cf10 \strokec10 reload\cf4 \strokec4 ()\
+		\}\
+\
+		\cf3 \strokec3 async\cf4 \strokec4  \cf3 \strokec3 function\cf4 \strokec4  \cf10 \strokec10 main\cf4 \strokec4 () \{\
+			\cf3 \strokec3 await\cf4 \strokec4  liff.\cf10 \strokec10 init\cf4 \strokec4 (\{ \cf7 \strokec7 liffId\cf4 \strokec4 : \cf8 \strokec8 "\uc0\u20320 \u30003 \u35531 \u30340 LIFF_ID"\cf4 \strokec4  \})\
+			\cf3 \strokec3 if\cf4 \strokec4  (liff.\cf10 \strokec10 isLoggedIn\cf4 \strokec4 ()) \{\
+				\cf8 \strokec8 document\cf4 \strokec4 .\cf10 \strokec10 getElementById\cf4 \strokec4 (\cf8 \strokec8 "btnShare"\cf4 \strokec4 ).style.display = \cf8 \strokec8 "block"\cf4 \strokec4 \
+				\cf8 \strokec8 document\cf4 \strokec4 .\cf10 \strokec10 getElementById\cf4 \strokec4 (\cf8 \strokec8 "btnShare2"\cf4 \strokec4 ).style.display = \cf8 \strokec8 "block"\cf4 \strokec4 \
+				\cf8 \strokec8 document\cf4 \strokec4 .\cf10 \strokec10 getElementById\cf4 \strokec4 (\cf8 \strokec8 "btnShare3"\cf4 \strokec4 ).style.display = \cf8 \strokec8 "block"\cf4 \strokec4 \
+				\cf3 \strokec3 if\cf4 \strokec4  (!liff.\cf10 \strokec10 isInClient\cf4 \strokec4 ()) \{\
+					\cf8 \strokec8 document\cf4 \strokec4 .\cf10 \strokec10 getElementById\cf4 \strokec4 (\cf8 \strokec8 "btnLogOut"\cf4 \strokec4 ).style.display = \cf8 \strokec8 "block"\cf4 \strokec4 \
+				\}\
+			\} \cf3 \strokec3 else\cf4 \strokec4  \{\
+				\cf8 \strokec8 document\cf4 \strokec4 .\cf10 \strokec10 getElementById\cf4 \strokec4 (\cf8 \strokec8 "btnLogin"\cf4 \strokec4 ).style.display = \cf8 \strokec8 "block"\cf4 \strokec4 \
+			\}\
+		\}\
+		\cf10 \strokec10 main\cf4 \strokec4 ()\
+	\cf6 \strokec6 </script>\cf4 \cb5 \strokec4 \
+\cf6 \cb1 \strokec6 </body>\cf4 \cb5 \strokec4 \
+\
+\cf6 \cb1 \strokec6 </html>}
